@@ -1,1 +1,1 @@
-# IHG_AWSWorkSpaces
+# AWSWorkSpaces
