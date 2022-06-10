@@ -1,10 +1,10 @@
-Function Get-IHGAWSWorkSpace {
+Function Get-AWSWorkSpace {
     <#
         .SYNOPSIS
             Retrieves information about AWS Workspace.
 
         .DESCRIPTION
-            Retrieves information about virtual desktop instance in IHG's AWS Workspaces environment
+            Retrieves information about virtual desktop instance in AWS Workspaces environment
             for specified AD users.
 
         .PARAMETER User
@@ -24,7 +24,7 @@ Function Get-IHGAWSWorkSpace {
             Secret key of AWS IAM account to be used for launching AWS Workspace(s) 
 
         .EXAMPLE
-            Get-IHGAWSWorkSpace -User 'user1' -DirectoryId 'ihgdirectory1' -Region 'us-east-1' -AccessKey 'mykey' -SecretKey 'mysecret'
+            Get-AWSWorkSpace -User 'user1' -DirectoryId 'directory1' -Region 'us-east-1' -AccessKey 'mykey' -SecretKey 'mysecret'
   #>
 
     [CmdletBinding()]

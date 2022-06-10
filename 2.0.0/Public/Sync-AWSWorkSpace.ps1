@@ -1,4 +1,4 @@
-Function Sync-IHGAWSWorkSpace {
+Function Sync-AWSWorkSpace {
     <#
         .SYNOPSIS
             ####

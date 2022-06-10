@@ -1,10 +1,10 @@
-﻿Function New-IHGAWSWorkSpace {
+﻿Function New-AWSWorkSpace {
     <#
         .SYNOPSIS
             Launches new AWS Workspace.
 
         .DESCRIPTION
-            Launches new virtual desktop instance in IHG's AWS Workspaces environment
+            Launches new virtual desktop instance in AWS Workspaces environment
             for specified AD users.
 
         .PARAMETER User
@@ -37,7 +37,7 @@
             Secret key of AWS IAM account to be used for launching AWS Workspace(s)
 
         .EXAMPLE
-            New-IHGAWSWorkSpace -User 'user1' -BundleId ihgbundle1'' -DirectoryId 'ihgdirectory1' -Region 'us-east-1' -AccessKey 'mykey' -SecretKey 'mysecret'
+            New-AWSWorkSpace -User 'user1' -BundleId bundle1'' -DirectoryId 'directory1' -Region 'us-east-1' -AccessKey 'mykey' -SecretKey 'mysecret'
 
   #>
 
@@ -81,16 +81,16 @@
         [ValidateNotNullOrEmpty()]
         [Amazon.WorkSpaces.Model.Tag[]]
         $Tags = @([Amazon.WorkSpaces.Model.Tag]@{
-                Key   = 'workgroup'
-                Value = 'wrk'
+                Key   = 'application'
+                Value = 'test'
             };
             [Amazon.WorkSpaces.Model.Tag]@{
                 Key   = 'function'
-                Value = 'ap'
+                Value = 'web'
             };
             [Amazon.WorkSpaces.Model.Tag]@{
-                Key   = 'chef_environment'
-                Value = 'Production'
+                Key   = 'environment'
+                Value = 'development'
             }
         ),
 

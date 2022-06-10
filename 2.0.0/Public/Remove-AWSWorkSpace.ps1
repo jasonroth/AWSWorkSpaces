@@ -1,10 +1,10 @@
-Function Remove-IHGAWSWorkSpace {
+Function Remove-AWSWorkSpace {
     <#
         .SYNOPSIS
             Removes AWS Workspace.
 
         .DESCRIPTION
-            Removes (destroys) virtual desktop instance in IHG's AWS Workspaces environment
+            Removes (destroys) virtual desktop instance AWS Workspaces environment
             for specified AD users.
 
         .PARAMETER User
@@ -24,7 +24,7 @@ Function Remove-IHGAWSWorkSpace {
             Secret key of AWS IAM account to be used for launching AWS Workspace(s) 
 
         .EXAMPLE
-            Remove-IHGAWSWorkSpace -User 'user1' -DirectoryId 'ihgdirectory1' -Region 'us-east-1' -AccessKey 'mykey' -SecretKey 'mysecret'
+            Remove-AWSWorkSpace -User 'user1' -DirectoryId 'directory1' -Region 'us-east-1' -AccessKey 'mykey' -SecretKey 'mysecret'
   #>
 
     [CmdletBinding()]

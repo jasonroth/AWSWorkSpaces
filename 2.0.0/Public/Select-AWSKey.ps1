@@ -1,4 +1,4 @@
-﻿Function Select-IHGAWSKey {
+﻿Function Select-AWSKey {
     <#
         .SYNOPSIS
             Selects encryption key for use with AWS Workspace.
@@ -20,7 +20,7 @@
             Secret key of AWS IAM account to be used for querying keys.
 
         .EXAMPLE
-            Select-IHGAWSKey -Filter 'Workspace' -Region 'us-east-1' -AccessKey 'mykey' -SecretKey 'mysecret'
+            Select-AWSKey -Filter 'Workspace' -Region 'us-east-1' -AccessKey 'mykey' -SecretKey 'mysecret'
   #>
 
     [CmdletBinding()]
